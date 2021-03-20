@@ -1,0 +1,25 @@
+{
+  "name": "ui-meetup-react-working-patterns",
+  "version": "1.0.0",
+  "description": "UI Meetup - A presentation on React Working Patterns",
+  "scripts": {
+    "start": "mdx-deck slides/deck.mdx",
+    "clean": "rm -rf .cache public",
+    "prebuild": "npm run clean",
+    "build": "gatsby build --prefix-paths",
+    "predeploy": "npm run build",
+    "deploy": "npm run gh-pages",
+    "gh-pages": "npx gh-pages -d public"
+  },
+  "keywords": [],
+  "author": "Phani Rahul Sivalenka",
+  "license": "ISC",
+  "devDependencies": {
+    "@code-surfer/themes": "3.1.1",
+    "code-surfer": "3.1.1",
+    "gatsby": "2.28.0",
+    "gatsby-plugin-catch-links": "2.6.0",
+    "gatsby-theme-mdx-deck": "3.1.0",
+    "mdx-deck": "3.1.0"
+  }
+}
