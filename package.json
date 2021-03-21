@@ -1,7 +1,7 @@
 {
   "name": "ui-meetup-css-we-should-start-using",
   "version": "1.0.0",
-  "description": "UI Meetup - A presentation on React Working Patterns",
+  "description": "UI Meetup - A presentation on CSS We Should Start Using",
   "scripts": {
     "start": "mdx-deck slides/deck.mdx",
     "clean": "rm -rf .cache public",
