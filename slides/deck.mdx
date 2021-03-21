@@ -8,21 +8,141 @@ import { themes } from 'mdx-deck';
 
 import { COLUMN_THEMES } from './constants';
 import Head from './components/Head';
+import CssLogicalPropsDemo from './components/CssLogicalPropsDemo';
+import CssGridDemo from './components/CssGridDemo';
 
 import './styles/overrides.css';
 import './styles/styles.css';
 
 export const theme = themes.notes;
 
-<Head title="Title of Presentation" />
+<Head title="CSS We Should Start Using" />
 
 <!-- Slides Start -->
 
-# Title of Presentation
+# CSS We Should Start Using
 
-#### UI Meetup - 15th Mar 2021
+#### UI Meetup - 22th Mar 2021
 
 ###### By Phani Rahul Sivalenka [@rahulsivalenka](https://twitter.com/rahulsivalenka)
+
+---
+
+Latest CSS features that we can start using now.
+
+---
+
+# Custom Properties
+
+---
+
+<div className="basic-text-slide">
+
+# Custom Properties or CSS Variables
+
+### Resources
+
+- [My previous presentation](http://rahulsivalenka.github.io/ui-meetup-css-custom-properties)
+- [Learn CSS Variables in 5 minutes](https://www.freecodecamp.org/news/learn-css-variables-in-5-minutes-80cf63b4025d)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [A Strategy Guide To CSS Custom Properties](https://www.smashingmagazine.com/2018/05/css-custom-properties-strategy-guide/)
+
+</div>
+
+---
+
+# Grid
+
+---
+
+<div className="demo-slide">
+  <CssGridDemo />
+</div>
+
+---
+
+<div className="basic-text-slide">
+
+# Grid
+
+<picture>
+  <source
+    type="image/webp"
+    srcset="https://caniuse.bitsofco.de/image/css-grid.webp"
+  />
+  <source
+    type="image/png"
+    srcset="https://caniuse.bitsofco.de/image/css-grid.png"
+  />
+  <img
+    src="https://caniuse.bitsofco.de/image/css-grid.jpg"
+    alt="Data on support for the css-grid feature across the major browsers from caniuse.com"
+  />
+</picture>
+
+</div>
+
+---
+
+<div className="basic-text-slide">
+
+# Grid
+
+### Resources
+
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)
+- [Learn CSS Grid - Wes Bos](https://cssgrid.io/)
+
+</div>
+
+---
+
+# Logical Properties
+
+---
+
+<div className="demo-slide">
+  <CssLogicalPropsDemo />
+</div>
+
+---
+
+<div className="basic-text-slide">
+
+# Logical Properties
+
+<picture>
+  <source
+    type="image/webp"
+    srcset="https://caniuse.bitsofco.de/image/css-logical-props.webp"
+  />
+  <source
+    type="image/png"
+    srcset="https://caniuse.bitsofco.de/image/css-logical-props.png"
+  />
+  <img
+    src="https://caniuse.bitsofco.de/image/css-logical-props.jpg"
+    alt="Data on support for the css-logical-props feature across the major browsers from caniuse.com"
+  />
+</picture>
+
+</div>
+
+---
+
+<div className="basic-text-slide">
+
+# Logical Properties
+
+### Resources
+
+- [CSS Tricks](https://css-tricks.com/css-logical-properties/)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties)
+- [Understanding Logical Properties Values](https://www.smashingmagazine.com/2018/03/understanding-logical-properties-values/)
+- [CSS Logical Properties and Values in Chromium and WebKit](https://blogs.igalia.com/mrego/2018/08/08/css-logical-properties-and-values-in-chromium/)
+
+</div>
 
 ---
 
