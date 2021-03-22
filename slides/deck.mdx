@@ -10,6 +10,10 @@ import { COLUMN_THEMES } from './constants';
 import Head from './components/Head';
 import CssLogicalPropsDemo from './components/CssLogicalPropsDemo';
 import CssGridDemo from './components/CssGridDemo';
+import ColumnsDemo from './components/ColumnsDemo';
+import ClampDemo from './components/ClampDemo';
+import CssCounterDemo from './components/CssCounterDemo';
+import logicalPropsLayout from './images/webpage-layouts.png';
 
 import './styles/overrides.css';
 import './styles/styles.css';
@@ -32,7 +36,36 @@ Latest CSS features that we can start using now.
 
 ---
 
-# Custom Properties
+# Custom Properties or CSS Variables
+
+---
+
+# Custom Properties or CSS Variables
+
+[My previous presentation on CSS custom properties](http://rahulsivalenka.github.io/ui-meetup-css-custom-properties)
+
+---
+
+<div className="basic-text-slide">
+
+# Custom Properties or CSS Variables
+
+<picture>
+  <source
+    type="image/webp"
+    srcset="https://caniuse.bitsofco.de/image/css-variables.webp"
+  />
+  <source
+    type="image/png"
+    srcset="https://caniuse.bitsofco.de/image/css-variables.png"
+  />
+  <img
+    src="https://caniuse.bitsofco.de/image/css-variables.jpg"
+    alt="Data on support for the css-variables feature across the major browsers from caniuse.com"
+  />
+</picture>
+
+</div>
 
 ---
 
@@ -42,7 +75,6 @@ Latest CSS features that we can start using now.
 
 ### Resources
 
-- [My previous presentation on CSS custom properties](http://rahulsivalenka.github.io/ui-meetup-css-custom-properties)
 - [Learn CSS Variables in 5 minutes](https://www.freecodecamp.org/news/learn-css-variables-in-5-minutes-80cf63b4025d)
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 - [A Strategy Guide To CSS Custom Properties](https://www.smashingmagazine.com/2018/05/css-custom-properties-strategy-guide/)
@@ -108,6 +140,24 @@ Latest CSS features that we can start using now.
 
 ---
 
+<h4 style={{ marginBottom: '10px' }}>
+  Logical Properties
+</h4>
+
+<img
+  src={logicalPropsLayout}
+  alt="Logical Properties"
+  style={{ maxHeight: '450px', marginBottom: '10px' }}
+/>
+<p style={{ fontSize: '1rem', marginTop: '10px' }}>
+
+Source:
+[https://blog.logrocket.com/the-latest-features-of-css-in-2021/](https://blog.logrocket.com/the-latest-features-of-css-in-2021/)
+
+</p>
+
+---
+
 <div className="basic-text-slide">
 
 # Logical Properties
@@ -141,6 +191,142 @@ Latest CSS features that we can start using now.
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties)
 - [Understanding Logical Properties Values](https://www.smashingmagazine.com/2018/03/understanding-logical-properties-values/)
 - [CSS Logical Properties and Values in Chromium and WebKit](https://blogs.igalia.com/mrego/2018/08/08/css-logical-properties-and-values-in-chromium/)
+
+</div>
+
+---
+
+# `columns`
+
+---
+
+<div className="demo-slide">
+  <ColumnsDemo />
+</div>
+
+---
+
+<div className="basic-text-slide">
+
+# `columns`
+
+<picture>
+  <source
+    type="image/webp"
+    srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__columns-1616388023294.webp"
+  />
+  <source
+    type="image/png"
+    srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__columns-1616388023294.png"
+  />
+  <img
+    src="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__columns-1616388023294.jpg"
+    alt="Data on support for the mdn-css__properties__columns feature across the major browsers from caniuse.com"
+  />
+</picture>
+
+</div>
+
+---
+
+<div className="basic-text-slide">
+
+# `columns`
+
+### Resources
+
+- [CSS Tricks](https://css-tricks.com/almanac/properties/c/columns)
+
+</div>
+
+---
+
+# `line-clamp`
+
+---
+
+<div className="demo-slide">
+  <ClampDemo />
+</div>
+
+---
+
+<div className="basic-text-slide">
+
+# `line-clamp`
+
+<picture>
+  <source
+    type="image/webp"
+    srcset="https://caniuse.bitsofco.de/image/css-line-clamp.webp"
+  />
+  <source
+    type="image/png"
+    srcset="https://caniuse.bitsofco.de/image/css-line-clamp.png"
+  />
+  <img
+    src="https://caniuse.bitsofco.de/image/css-line-clamp.jpg"
+    alt="Data on support for the css-line-clamp feature across the major browsers from caniuse.com"
+  />
+</picture>
+
+</div>
+
+---
+
+<div className="basic-text-slide">
+
+# `line-clamp`
+
+### Resources
+
+- [CSS Tricks](https://css-tricks.com/almanac/properties/c/line-clamp)
+
+</div>
+
+---
+
+# CSS Counters
+
+---
+
+<div className="demo-slide">
+  <CssCounterDemo />
+</div>
+
+---
+
+<div className="basic-text-slide">
+
+# CSS Counters
+
+<picture>
+  <source
+    type="image/webp"
+    srcset="https://caniuse.bitsofco.de/image/css-counters.webp"
+  />
+  <source
+    type="image/png"
+    srcset="https://caniuse.bitsofco.de/image/css-counters.png"
+  />
+  <img
+    src="https://caniuse.bitsofco.de/image/css-counters.jpg"
+    alt="Data on support for the css-counters feature across the major browsers from caniuse.com"
+  />
+</picture>
+
+</div>
+
+---
+
+<div className="basic-text-slide">
+
+# CSS Counters
+
+### Resources
+
+- [Understanding CSS Counters and Their Use Cases](https://www.sitepoint.com/understanding-css-counters-and-their-use-cases/)
+- [The Guide on Calculating and Nesting CSS Counters](https://www.bitdegree.org/learn/css-counters)
 
 </div>
 
